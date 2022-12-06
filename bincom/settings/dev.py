@@ -16,7 +16,7 @@ DEBUG = True
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
-        "NAME": config("DB_NAME"),
+        "NAME": "Olanike$bincomtest",
         "USER": "Olanike",
         "PASSWORD": "123456$$$",
         "HOST": 'Olanike.mysql.pythonanywhere-services.com',
