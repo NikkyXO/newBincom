@@ -1,5 +1,8 @@
 from bincom.settings.base import *
+import os
+from decouple import config
 
+SECRET_KEY = config('SECRET_KEY')
 
 DEBUG = False
 
