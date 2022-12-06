@@ -10,10 +10,10 @@ DEBUG = False
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': '',
-        'USER': '',
-        'PASSWORD': '',
-        'HOST':'localhost',
+        'NAME': 'sql8582000',
+        'USER': 'sql8582000',
+        'PASSWORD': ' YTyl3z4HAW',
+        'HOST':'sql8.freemysqlhosting.net',
         'PORT':'3306',
     }
 }
