@@ -18,7 +18,7 @@ DATABASES = {
         "ENGINE": "django.db.backends.mysql",
         "NAME": config("DB_NAME"),
         "USER": "Olanike",
-        "PASSWORD": config('DB_PASSWORD'),
+        "PASSWORD": "123456$$$",
         "HOST": 'Olanike.mysql.pythonanywhere-services.com',
         "PORT": "3306"
     }
