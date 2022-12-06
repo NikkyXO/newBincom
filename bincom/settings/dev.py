@@ -14,12 +14,12 @@ DEBUG = True
 
 #Database
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'sql8582000',
-        'USER': 'sql8582000',
-        'PASSWORD': ' YTyl3z4HAW',
-        'HOST':'sql8.freemysqlhosting.net',
-        'PORT':'3306',
+    "default": {
+        "ENGINE": "django.db.backends.mysql",
+        "NAME": config("DB_NAME"),
+        "USER": "Olanike",
+        "PASSWORD": config('DB_PASSWORD'),
+        "HOST": 'Olanike.mysql.pythonanywhere-services.com',
+        "PORT": "3306"
     }
 }
