@@ -1,0 +1,48 @@
+{% extends 'partials/base.html' %} {% block content %}
+<div class="row">
+	<div class="text-center my-2">
+		<h1>Polling Unit Result</h1>
+	</div>
+	<form action="" method="post">
+		{% csrf_token %}
+		<div>
+			<input
+				type="text"
+				name="unit_name"
+				id=""
+				class="my-2 form-control"
+				placeholder="Unit Name"
+			/>
+			<table class="table text-center">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>Party</th>
+						<th>Score</th>
+					</tr>
+				</thead>
+				<tbody>
+					{% for party in parties %}
+					<tr>
+						<th>{{forloop.counter}}</th>
+						<td>{{party.partyname}}</td>
+						<td>
+							<input
+								type="number"
+								name="party_score"
+								id=""
+								class="form-control"
+								placeholder="{{party.partyname}}"
+							/>
+						</td>
+					</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		</div>
+		<div>
+			<button type="submit" class="btn btn-dark">Add Unit</button>
+		</div>
+	</form>
+</div>
+{% endblock content %}
