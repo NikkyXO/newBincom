@@ -14,12 +14,12 @@ DEBUG = True
 
 #Database
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.mysql",
-        "NAME": config("DB_NAME"),
-        "USER": "root",
-        "PASSWORD": config('DB_PASSWORD'),
-        "HOST": config('DB_HOST'),
-        "PORT": "3306"
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'sql8582000',
+        'USER': 'sql8582000',
+        'PASSWORD': ' YTyl3z4HAW',
+        'HOST':'sql8.freemysqlhosting.net',
+        'PORT':'3306',
     }
 }
