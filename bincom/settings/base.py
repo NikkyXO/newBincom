@@ -68,12 +68,17 @@ WSGI_APPLICATION = "bincom.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-# DATABASES = {
-#     "default": {
-#         "ENGINE": "django.db.backends.sqlite3",
-#         "NAME": BASE_DIR / "db.sqlite3",
-#     }
-# }
+#Database
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.mysql",
+        "NAME": "Olanike$bincomtest",
+        "USER": "Olanike",
+        "PASSWORD": "123456$$$",
+        "HOST": 'Olanike.mysql.pythonanywhere-services.com',
+        "PORT": "3306"
+    }
+}
 
 
 
