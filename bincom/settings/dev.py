@@ -12,6 +12,8 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = True
 
 
+
+
 #Database
 DATABASES = {
     "default": {
